@@ -39,7 +39,8 @@ body {
     width: 45px;
     bottom: 15px;
     margin: 0;
-    z-index: 5;  
+    z-index: 5; 
+    animation: pokeball-animation 1.5s linear infinite, pokeball-rotation .8s linear infinite;
 }
 
 .bush {
@@ -63,4 +64,24 @@ h1 {
     top: 200px;
     font-size: 50px;
     display: none;
+}
+
+@keyframes pokeball-animation {
+    from {
+        right: -150px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pokeball-rotation {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
