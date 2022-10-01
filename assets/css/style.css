@@ -48,6 +48,7 @@ body {
     width: 250px;
     right: 20px;
     bottom: 0px;
+    animation: bush-animation 2s linear infinite;
 }
 
 .clouds {
@@ -55,6 +56,7 @@ body {
     width: 350px;
     right: 100px;
     top: 50px;
+    animation: clouds-animation 5s linear infinite;
 }
 
 h1 {
@@ -120,6 +122,24 @@ h1 {
     10% {
         transform: rotate(-35deg);
     }
+}
 
+@keyframes clouds-animation {
+    from {
+        right: -350px;
+    }
 
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes bush-animation {
+    from {
+        right: -200px;
+    }
+
+    to {
+        right: 100%;
+    }
 }

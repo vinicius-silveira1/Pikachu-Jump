@@ -16,7 +16,7 @@ const jump = () => {
 
 const gameLoop = setInterval(() => {
     const pokeballPosition = pokeball.offsetLeft;
-    const pikachuPosition = window.getComputerStyle(pikachu).bottom.replace('px', '');
+    const pikachuPosition = window.getComputedStyle(pikachu).bottom.replace('px', '');
     const cloudsPosition = clouds.offsetLeft;
     const bushPosition = bush.offsetLeft;
 
@@ -33,7 +33,7 @@ const gameLoop = setInterval(() => {
         bush.style.animation = 'none';
         bush.style.left = `${bushPosition}px`;
 
-        pikachu.src = "ed0cc7c0a1dcb68.png";
+        pikachu.src = "assets/images/ed0cc7c0a1dcb68.png";
         pikachu.style.width = '200px';
         pikachu.style.marginBottom = '0';
 
